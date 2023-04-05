@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <table border="3px">
+        <tr style="background-color: yellow;">
+            <th style="text-align: end;">name</th>
+            <th style="color:aquamarine">aupther</th>
+            <th>date</th>
+        </tr>
+    {% for i in access %}
+    <tr>
+        <th>{{i.name}}</th>
+        <th>{{i.aupther}}</th>
+        <th>{{i.date}}</th>
+    </tr>
+    {% endfor %}
+</table>
+    </center>
+</body>
+</html>
